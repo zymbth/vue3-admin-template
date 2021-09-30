@@ -15,7 +15,7 @@
     "@fortawesome/vue-fontawesome": "^3.0.0-3",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
-    "element-plus": "^1.0.2-beta.42",
+    "element-plus": "1.1.0-beta.12",
     "file-saver": "^2.0.5",
     "js-cookie": "2.2.0",
     "node-sass": "4.14.1",
@@ -23,9 +23,9 @@
     "nprogress": "0.2.0",
     "path-to-regexp": "2.4.0",
     "qs": "^6.10.1",
-    "vue": "^3.0.11",
-    "vue-router": "^4.0.0-0",
-    "vuex": "^4.0.0-rc.2"
+    "vue": "3.2.19",
+    "vue-router": "4.0.11",
+    "vuex": "4.0.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
