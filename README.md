@@ -1,37 +1,29 @@
-# Vue Admin Template
+# Vue3 Admin Template
 
-## Via yarn
+在大佬的基础上[PanJiaChen / vue-admin-template](https://github.com/PanJiaChen/vue-admin-template)，更换为vue3 & element plus，方便个人后续使用
 
-### Project setup
+[线上地址](http://ymzhao.work/vue3-admin-template)
+
+## Project setup
+
 ```bash
 yarn install
-```
-
-### Compiles and hot-reloads for development
-```bash
-yarn dev
-```
-
-### Compiles and minifies for production
-```bash
-yarn build
-```
-## Via npm
-
-### delete yarn file
-delete 'yarn.lock'
-
-### Project setup
-```bash
+or
 npm install
 ```
 
-### Compiles and hot-reloads for development
+## Compiles and hot-reloads for development
+
 ```bash
+yarn dev
+or
 npm run dev
 ```
 
-### Compiles and minifies for production
+## Compiles and minifies for production
+
 ```bash
+yarn build
+or
 npm run build
 ```

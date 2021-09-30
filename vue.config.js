@@ -4,15 +4,13 @@ const CompressionWebpackPlugin = require('compression-webpack-plugin')
 const productionGzipExtensions = ['js', 'css']
 module.exports = {
 	configureWebpack:{
-		// externals: {
-		// 	'vue': 'Vue',
-		// 	'vue-router': 'VueRouter',
-		// 	'vuex': 'Vuex',
-		// 	'element-plus': 'ElementPlus',
-		// 	'axios': 'axios',
-		// 	'echarts': 'echarts',
-		// 	'xlsx': 'XLSX'
-		// },
+		externals: {
+			'vue': 'Vue',
+			'vue-router': 'VueRouter',
+			'vuex': 'Vuex',
+			'element-plus': 'ElementPlus',
+			'axios': 'axios'
+		},
 		plugins: [
 			new CompressionWebpackPlugin({
 				filename: '[path].gz[query]',
@@ -52,6 +50,6 @@ module.exports = {
 	},
 	publicPath: '/'
 	// publicPath: process.env.NODE_ENV === 'production'
-	// 	? '/aegicare/erp/'
+	// 	? '/myproj/vue3-admin-template/'
 	// 	: '/'
 }
