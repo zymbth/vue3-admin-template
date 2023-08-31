@@ -8,11 +8,11 @@
     "build:stage": "vue-cli-service build --mode staging"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.35",
-    "@fortawesome/free-brands-svg-icons": "^5.15.3",
-    "@fortawesome/free-regular-svg-icons": "^5.15.3",
-    "@fortawesome/free-solid-svg-icons": "^5.15.3",
-    "@fortawesome/vue-fontawesome": "^3.0.0-3",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/vue-fontawesome": "^3.0.3",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "element-plus": "1.1.0-beta.12",
@@ -32,9 +32,10 @@
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
     "compression-webpack-plugin": "^4.0.0",
-    "node-sass": "^4.12.0",
+    "sass": "^1.66.1",
     "sass-loader": "^8.0.2",
     "script-loader": "^0.7.2",
+    "svg-sprite-loader": "^6.0.11",
     "uglifyjs-webpack-plugin": "^2.2.0"
   },
   "browserslist": [

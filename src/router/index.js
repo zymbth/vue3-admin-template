@@ -63,51 +63,51 @@ export const constantRoutes = [
   },
 
   {
-    path: '/resource',
+    path: '/example',
     component: Layout,
-    redirect: '/resource/dashboard',
-    name: 'Resource',
-    meta: { title: '资源管理', icon: 'fa-folder-open' },
+    redirect: '/example/icon',
+    name: 'Example',
+    meta: { title: 'Example', icon: 'fa-list' },
     children: [
       {
-        path: 'dashboard',
-        name: 'ResourceDashboard',
-        component: () => import('@/views/resource/dashboard'),
-        meta: { title: '资源面板', icon: 'fa-chalkboard' }
+        path: 'icon',
+        name: 'ExampleDashboard',
+        component: () => import('@/views/example/icon'),
+        meta: { title: '图标', icon: 'far-face-smile' }
       },
       {
         path: 'user',
-        component: () => import('@/views/resource/user/index'),
-        redirect: '/resource/user/list',
-        name: 'ResourceUser',
-        meta: { title: '用户管理', icon: 'fa-user' },
+        component: () => import('@/views/example/user/index'),
+        redirect: '/example/user/list',
+        name: 'ExampleUser',
+        meta: { title: '用户管理', icon: 'fa-list' },
         children: [
           {
             path: 'list',
-            name: 'ResourceUserList',
-            meta: { title: '用户列表', icon: 'fa-users' },
-            component: () => import('@/views/resource/user/list')
+            name: 'ExampleUserList',
+            meta: { title: '用户列表', icon: 'fa-user' },
+            component: () => import('@/views/example/user/list')
           },
           {
             path: 'relations',
-            name: 'ResourceUserRelations',
-            meta: { title: '亲属关系', icon: 'fa-user-friends' },
-            component: () => import('@/views/resource/user/relations')
+            name: 'ExampleUserRelations',
+            meta: { title: '亲属关系', icon: 'fa-circle' },
+            component: () => import('@/views/example/user/relations')
           }
         ]
       },
       {
         path: 'product',
-        component: () => import('@/views/resource/product/index'),
-        redirect: '/resource/product/list',
-        name: 'ResourceProduct',
-        meta: { title: '产品管理', icon: 'fa-industry' },
+        component: () => import('@/views/example/product/index'),
+        redirect: '/example/product/list',
+        name: 'ExampleProduct',
+        meta: { title: '产品管理', icon: 'fa-circle' },
         children: [
           {
             path: 'list',
-            name: 'ResourceProductList',
-            meta: { title: '产品列表', icon: 'fa-th-list' },
-            component: () => import('@/views/resource/product/list')
+            name: 'ExampleProductList',
+            meta: { title: '产品列表', icon: 'fa-circle' },
+            component: () => import('@/views/example/product/list')
           }
         ]
       },

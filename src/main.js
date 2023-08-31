@@ -14,21 +14,14 @@ import '@/permission' // permission control
 
 import SvgIcon from '@/components/SvgIcon'// svg component
 
-// 先导入图标，再使用
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faChalkboard, faFolderOpen, faUser, faUsers, faUserFriends, faThList } from '@fortawesome/free-solid-svg-icons'
-
-library.add(faChalkboard, faFolderOpen, faUser, faUsers, faUserFriends, faThList)
-
-// const req = require.context('./svg', false, /\.svg$/)
-// const requireAll = requireContext => requireContext.keys().map(requireContext)
-// requireAll(req)
+// 方法：注册 FontAwesomeIcon 组件
+import regAwesomeIcon from '@/utils/register-font-awesome-icon'
 
 const app = createApp(App)
 app.use(ElementPlus, { locale })
 app.use(store)
 app.use(router)
 app.component('svg-icon', SvgIcon)
-app.component('font-awesome-icon', FontAwesomeIcon)
 app.mount('#app')
+
+regAwesomeIcon(app)
