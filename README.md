@@ -4,26 +4,26 @@
 
 [线上地址](http://ymzhao.work/vue3-admin-template)
 
-## Project setup
+## 安装依赖
 
 ```bash
 yarn install
-or
+# or
 npm install
 ```
 
-## Compiles and hot-reloads for development
+## 开发
 
 ```bash
 yarn dev
-or
+# or
 npm run dev
 ```
 
-## Compiles and minifies for production
+## 打包
 
 ```bash
 yarn build
-or
+# or
 npm run build
 ```
