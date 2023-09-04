@@ -2,7 +2,7 @@
 
 在大佬的基础上[PanJiaChen / vue-admin-template](https://github.com/PanJiaChen/vue-admin-template)，迁移到 `vue3` & `element plus`，解决兼容问题，方便快速创建一个管理系统。
 
-相当于使用 `vue-cli` 创建一个基于 `vue3` 全家桶以及 `element plus` 的项目。在布局组件下显示页面，布局组件包括左侧可收缩/展开的菜单栏，右侧顶部导航栏+用户菜单，右下方为页面视图。详细功能设计请参看源项目
+项目使用 `vue-cli` 创建一个基于 `vue3` 全家桶以及 `element plus` 的项目。在布局组件下显示页面，布局组件包括左侧可收缩/展开的菜单栏，右侧顶部导航栏+用户菜单，右下方为页面视图。详细功能设计请参看源项目
 
 [zymbth.github.io/vue3-admin-template/](https://zymbth.github.io/vue3-admin-template/)
 
@@ -53,7 +53,7 @@
 
 需要注意并了解清楚的有：
 
-- 布局容器组件
+- 布局容器组件 layout
 - 路由-菜单的关联
 - svg图标的封装与使用
 - 权限验证，项目中仅提供了简单的示例，需根据实际需求调整完善
@@ -62,13 +62,15 @@
 
 ## 三、主要依赖
 
+项目主要依赖介绍
+
 ### `element-plus@2.3.12`
 
 UI 框架
 
 > 官网：[Element Plus](https://element-plus.gitee.io/zh-CN/)
 
-element plus 图标如有需要，需单独引入
+element plus 图标如有需要，需单独引入，参照官网[指引](https://element-plus.org/zh-CN/component/icon.html)
 
 ### `font-awesome-icon`
 
