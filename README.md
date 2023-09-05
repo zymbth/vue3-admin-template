@@ -1,10 +1,10 @@
 # Vue3 Admin Template
 
-在大佬的基础上[PanJiaChen / vue-admin-template](https://github.com/PanJiaChen/vue-admin-template)，迁移到 `vue3` & `element plus`，解决兼容问题，方便快速创建一个管理系统。
+将大佬的项目 [PanJiaChen / vue-admin-template](https://github.com/PanJiaChen/vue-admin-template) 迁移到 `vue3` & `element plus`，解决兼容问题，方便快速创建一个管理系统。
 
 项目使用 `vue-cli` 创建一个基于 `vue3` 全家桶以及 `element plus` 的项目。在布局组件下显示页面，布局组件包括左侧可收缩/展开的菜单栏，右侧顶部导航栏+用户菜单，右下方为页面视图。详细功能设计请参看源项目
 
-[zymbth.github.io/vue3-admin-template/](https://zymbth.github.io/vue3-admin-template/)
+本项目在线体验：[zymbth.github.io/vue3-admin-template/](https://zymbth.github.io/vue3-admin-template/)
 
 ---
 
@@ -23,7 +23,7 @@
 ## 二、项目目录结构
 
 ```text
-├ .github
+├ .github 配置文件，可删除
 ├ dist 编译输出目录
 ├ public 静态资源
 │ └ index.html 项目主页
@@ -54,8 +54,22 @@
 需要注意并了解清楚的有：
 
 - 布局容器组件 layout
+
+```text
+├ src 源码目录
+│ ├ layout 布局容器组件
+│ │ ├ components 组件
+│ │ │ ├ Sidebar 侧边菜单栏
+│ │ │ ├ TagsView 顶部标签栏
+│ │ │ ├ AppMain.vue 主视图/页面视图组件
+│ │ │ ├ Navbar.vue 用户菜单组件
+│ │ │ └ index.js 组件聚合
+│ │ ├ mixin 混入逻辑
+│ │ └ index.vue 根组件
+```
+
 - 路由-菜单的关联
-- svg图标的封装与使用
+- svg图标的封装与使用：[vue-element-admin - Svg Icon 图标](https://panjiachen.github.io/vue-element-admin-site/zh/feature/component/svg-icon.html#%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F)
 - 权限验证，项目中仅提供了简单的示例，需根据实际需求调整完善
 
 ---
@@ -121,6 +135,7 @@ element plus 图标如有需要，需单独引入，参照官网[指引](https:/
 ### 2. svg 图标
 
 > 封装参考
+>
 > [vue3 封装 svg 图标组件](https://juejin.cn/post/7213983712731906106)
 >
 > [vue-element-admin - Svg Icon 图标](https://panjiachen.github.io/vue-element-admin-site/zh/feature/component/svg-icon.html#%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F)
